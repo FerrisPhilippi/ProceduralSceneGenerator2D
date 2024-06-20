@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmqdwb4so7imk"]
+
+[ext_resource type="Texture2D" uid="uid://dhi7hab2qm1qk" path="res://addons/ProceduralSceneGenerator2D/demo_assets/MasterSimple.png" id="1_34vcc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_spxd8"]
+size = Vector2(16, 16)
+
+[node name="SceneToPlaceDefault" type="Sprite2D"]
+texture = ExtResource("1_34vcc")
+hframes = 16
+vframes = 16
+frame = 23
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_spxd8")
+debug_color = Color(0.477277, 0.588359, 0, 0.42)
